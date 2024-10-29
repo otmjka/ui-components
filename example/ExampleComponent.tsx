@@ -22,7 +22,7 @@ const ExampleComponent: FC = () => {
           <SignInFormBox>
             <EmailControl placeholder="nameuremail@email.com" />
 
-            <PasswordControl />
+            <PasswordControl onForgotClick={() => {}} />
             <RememberMeControl />
 
             <SubmitButton title="Sign in" onSubmit={() => {}} />

@@ -14,4 +14,5 @@ export {
   SignInContainer,
   SubmitButton,
   SignUpLink,
+  SignInFormBox,
 } from './components';
