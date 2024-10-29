@@ -1,35 +1,13 @@
-import React, { FC } from 'react';
-
-import {
-  SignInFormBox,
-  SignInCard,
-  SignInContainer,
-  SubmitButton,
-  H1,
-  EmailControl,
-  PasswordControl,
-  RememberMeControl,
-  SignUpLink,
-} from '../src/components';
+import React, { FC, useCallback } from 'react';
+import { SubmitHandler, useForm, Controller } from 'react-hook-form';
+import { SignInForm, SignInFormInput } from '../src/components';
 
 const ExampleComponent: FC = () => {
+  const onSubmit: SubmitHandler<SignInFormInput> = (data) => console.log(data);
+
   return (
     <>
-      <SignInContainer direction="column" justifyContent="space-between">
-        <SignInCard variant="outlined">
-          <H1 children="Sign in" />
-
-          <SignInFormBox>
-            <EmailControl placeholder="nameuremail@email.com" />
-
-            <PasswordControl onForgotClick={() => {}} />
-            <RememberMeControl />
-
-            <SubmitButton title="Sign in" onSubmit={() => {}} />
-            <SignUpLink />
-          </SignInFormBox>
-        </SignInCard>
-      </SignInContainer>
+      <SignInForm onSubmit={onSubmit} />
     </>
   );
 };

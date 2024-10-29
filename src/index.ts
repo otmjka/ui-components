@@ -1,7 +1,5 @@
-// src/index.ts
-
-/* Typography */
 export {
+  /* Typography */
   H1,
 
   /* Form */
@@ -10,9 +8,7 @@ export {
   EmailControl,
   PasswordControl,
   RememberMeControl,
-  SignInCard,
-  SignInContainer,
-  SubmitButton,
-  SignUpLink,
-  SignInFormBox,
+  SignInForm,
 } from './components';
+
+export type { SignInFormInput } from './components';

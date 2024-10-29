@@ -10,10 +10,5 @@ export { EmailControl } from './EmailControl';
 export { PasswordControl } from './PasswordControl';
 export { RememberMeControl } from './RememberMeControl';
 
-export {
-  SubmitButton,
-  SignInCard,
-  SignInContainer,
-  SignInFormBox,
-  SignUpLink,
-} from './SignInForm';
+export { SignInForm } from './SignInForm';
+export type { SignInFormInput } from './SignInForm';

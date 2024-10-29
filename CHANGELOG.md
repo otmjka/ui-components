@@ -45,3 +45,15 @@ mb transform to
 │   │   │   ├── Button
 │   │   │   ├── H1
 │   │   │   ├── TextField
+
+1.0.8
+
+- [+] change package.json
+- [+] react-hook example
+- [+] add tests for SignInForm
+  type email
+  type password
+  click submit
+  catch handler
+- [+] import SignInForm
+- [+] add data-testid to form controls

@@ -10,28 +10,34 @@ type PasswordControlProps = {
   onForgotClick: () => void;
 };
 
-const PasswordControl: FC<PasswordControlProps & TextFieldProps> = (props) => (
-  <FormControl>
-    <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-      <FormLabel htmlFor="password">Password</FormLabel>
-      <Link
-        component="button"
-        type="button"
-        onClick={props.onForgotClick}
-        variant="body2"
-        sx={{ alignSelf: 'baseline' }}
-      >
-        Forgot your password?
-      </Link>
-    </Box>
-    <TextField
-      placeholder="••••••"
-      type="password"
-      required
-      fullWidth
-      variant="outlined"
-    />
-  </FormControl>
-);
+const PasswordControl: FC<PasswordControlProps & TextFieldProps> = (props) => {
+  const { onForgotClick, id, ...fieldProps } = props;
+  return (
+    <FormControl>
+      <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+        <FormLabel htmlFor="password">Password</FormLabel>
+        <Link
+          component="button"
+          type="button"
+          onClick={props.onForgotClick}
+          variant="body2"
+          sx={{ alignSelf: 'baseline' }}
+        >
+          Forgot your password?
+        </Link>
+      </Box>
+      <TextField
+        placeholder="••••••"
+        id={id}
+        slotProps={{ htmlInput: { 'data-testid': id } }}
+        type="password"
+        required
+        fullWidth
+        variant="outlined"
+        {...fieldProps}
+      />
+    </FormControl>
+  );
+};
 
 export default PasswordControl;

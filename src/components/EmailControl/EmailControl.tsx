@@ -6,8 +6,9 @@ import FormLabel from '@mui/material/FormLabel';
 
 const EmailControl: FC<TextFieldProps> = (props) => (
   <FormControl>
-    <FormLabel htmlFor="email">Email</FormLabel>
+    <FormLabel htmlFor={props.id ?? 'email'}>Email</FormLabel>
     <TextField
+      slotProps={{ htmlInput: { 'data-testid': props.id } }}
       type="email"
       placeholder="your@email.com"
       autoComplete="email"

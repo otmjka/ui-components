@@ -49,27 +49,3 @@ export const Submit: Story = {
     sx: { ariaLabel: 'email' },
   },
 };
-
-// // Define your stories
-// export const Primary: Story = {
-//   args: {
-//     variant: 'contained',
-//     children: 'Primary Button',
-//     color: 'primary',
-//   },
-// };
-
-// export const Secondary: Story = {
-//   args: {
-//     variant: 'contained',
-//     children: 'Secondary Button',
-//     color: 'secondary',
-//   },
-// };
-
-// export const Outlined: Story = {
-//   args: {
-//     variant: 'outlined',
-//     children: 'Outlined Button',
-//   },
-// };

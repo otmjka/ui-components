@@ -1,11 +1,11 @@
-import { FC, ReactNode } from 'react';
-import Box from '@mui/material/Box';
+import { FC } from 'react';
+import Box, { BoxProps } from '@mui/material/Box';
 
-export const SignInFormBox: FC<{ children?: ReactNode }> = ({ children }) => (
+export const SignInFormBox: FC<BoxProps<'form'>> = (props) => (
   <Box
     component="form"
     noValidate
-    children={children}
+    {...props}
     sx={{
       display: 'flex',
       flexDirection: 'column',
