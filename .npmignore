@@ -3,3 +3,4 @@ src/
 test/
 .storybook
 .vscode
+ dist/stories

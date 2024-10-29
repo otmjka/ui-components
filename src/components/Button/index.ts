@@ -1,2 +1,3 @@
 // src/components/Button/index.ts
-export * from './Button';
+export { Button } from './Button';
+export type { ButtonProps } from './Button';
