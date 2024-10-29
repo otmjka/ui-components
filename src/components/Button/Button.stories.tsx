@@ -25,6 +25,15 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+export const Submit: Story = {
+  args: {
+    type: 'submit',
+    fullWidth: true,
+    variant: 'contained',
+    children: 'submit',
+  },
+};
+
 // Define your stories
 export const Primary: Story = {
   args: {

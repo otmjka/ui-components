@@ -24,7 +24,8 @@
   },
   "include": [
     "src",
-    ".storybook/**/*" // Include Storybook configuration
+    ".storybook/**/*", // Include Storybook configuration
+    "example"
   ],
   "exclude": ["node_modules", "dist"]
 }

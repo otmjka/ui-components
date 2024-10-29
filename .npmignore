@@ -4,3 +4,4 @@ test/
 .storybook
 .vscode
  dist/stories
+ *.stories.*
