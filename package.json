@@ -1,6 +1,6 @@
 {
   "name": "otmjka-ui-components",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "react, material ui, storybook, ui components library",
   "type": "module",
   "main": "dist/index.js",
@@ -18,7 +18,7 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "node esbuild.config.js && tsc --emitDeclarationOnly",
+    "build": "rm -rf dist && node esbuild.config.js && tsc --emitDeclarationOnly",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "prepublishOnly": "npm run build"

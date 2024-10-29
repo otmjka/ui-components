@@ -22,10 +22,12 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true
   },
-  "include": [
-    "src",
-    ".storybook/**/*", // Include Storybook configuration
-    "example"
-  ],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src", "example"],
+  "exclude": [
+    "example",
+    "node_modules",
+    "dist",
+    "**/*.stories.tsx",
+    ".storybook/**/*" // Include Storybook configuration
+  ]
 }
