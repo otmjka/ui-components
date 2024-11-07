@@ -20,7 +20,7 @@
   "scripts": {
     "build": "rm -rf dist && node esbuild.config.js && tsc --emitDeclarationOnly",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "storybook build -- -o ./docs --quiet",
     "test": "vitest",
     "prepublishOnly": "npm run build"
   },
