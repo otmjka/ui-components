@@ -1,0 +1,1 @@
+import{g as a,a as i}from"./DefaultPropsProvider-DO-IEbNz.js";function o(t){return i("MuiTypography",t)}const r=a("MuiTypography",["root","h1","h2","h3","h4","h5","h6","subtitle1","subtitle2","body1","body2","inherit","button","caption","overline","alignLeft","alignRight","alignCenter","alignJustify","noWrap","gutterBottom","paragraph"]);export{o as g,r as t};

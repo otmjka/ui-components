@@ -1,0 +1,3 @@
+import{C as s}from"./SignInCard-HgccCYmE.js";import"./DefaultPropsProvider-DO-IEbNz.js";import"./extends-BRD_ACZV.js";import"./index-uubelm5h.js";import"./Paper-BN9wCY-D.js";import"./useTheme-DCLL56SB.js";const d={title:"Components/SignInCard",component:s,parameters:{layout:"centered"},tags:["autodocs"],argTypes:{variant:{control:"select",options:["text","contained","outlined"]},color:{control:"select",options:["primary","secondary","error","info","success","warning"]}}},r={args:{}};var o,t,e;r.parameters={...r.parameters,docs:{...(o=r.parameters)==null?void 0:o.docs,source:{originalSource:`{
+  args: {}
+}`,...(e=(t=r.parameters)==null?void 0:t.docs)==null?void 0:e.source}}};const l=["Password"];export{r as Password,l as __namedExportsOrder,d as default};
