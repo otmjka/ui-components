@@ -1,6 +1,6 @@
-import { FC } from 'react';
-import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
+import { FC } from 'react'
+import Typography from '@mui/material/Typography'
+import Link from '@mui/material/Link'
 
 export const SignUpLink: FC = () => (
   <Typography sx={{ textAlign: 'center' }}>
@@ -15,4 +15,4 @@ export const SignUpLink: FC = () => (
       </Link>
     </span>
   </Typography>
-);
+)

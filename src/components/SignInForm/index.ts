@@ -1,5 +1,5 @@
-import SignInForm from './SignInForm';
+import SignInForm from './SignInForm'
 
-export type { SignInFormInput } from './types';
+export type { SignInFormInput } from './types'
 
-export { SignInForm };
+export { SignInForm }

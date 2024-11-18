@@ -1,5 +1,5 @@
-import { FC } from 'react';
-import Box, { BoxProps } from '@mui/material/Box';
+import { FC } from 'react'
+import Box, { BoxProps } from '@mui/material/Box'
 
 export const SignInFormBox: FC<BoxProps<'form'>> = (props) => (
   <Box
@@ -13,4 +13,4 @@ export const SignInFormBox: FC<BoxProps<'form'>> = (props) => (
       gap: 2,
     }}
   />
-);
+)

@@ -1,7 +1,7 @@
-import { FC } from 'react';
+import { FC } from 'react'
 
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox, { CheckboxProps } from '@mui/material/Checkbox';
+import FormControlLabel from '@mui/material/FormControlLabel'
+import Checkbox, { CheckboxProps } from '@mui/material/Checkbox'
 
 const RememberMeControl: FC<CheckboxProps> = (props) => (
   <FormControlLabel
@@ -16,6 +16,6 @@ const RememberMeControl: FC<CheckboxProps> = (props) => (
     }
     label="Remember me"
   />
-);
+)
 
-export default RememberMeControl;
+export default RememberMeControl

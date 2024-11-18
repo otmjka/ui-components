@@ -1,3 +1,3 @@
-import RememberMeControl from './RememberMeControl';
+import RememberMeControl from './RememberMeControl'
 
-export { RememberMeControl };
+export { RememberMeControl }

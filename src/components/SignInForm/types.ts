@@ -5,11 +5,11 @@ export enum FormFieldNames {
 }
 
 export type SignInFormInput = {
-  [FormFieldNames.email]: string;
-  [FormFieldNames.password]: string;
-  [FormFieldNames.rememberMe]: boolean;
-};
+  [FormFieldNames.email]: string
+  [FormFieldNames.password]: string
+  [FormFieldNames.rememberMe]: boolean
+}
 
 export type SignInFormProps = {
-  onSubmit: (values: SignInFormInput) => void;
-};
+  onSubmit: (values: SignInFormInput) => void
+}

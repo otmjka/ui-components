@@ -1,5 +1,5 @@
-import { FC } from 'react';
-import { Button } from '../Button';
+import { FC } from 'react'
+import { Button } from '../Button'
 
 export const SubmitButton: FC<{ title: string; onSubmit?: () => void }> = (
   props
@@ -13,4 +13,4 @@ export const SubmitButton: FC<{ title: string; onSubmit?: () => void }> = (
   >
     {props.title}
   </Button>
-);
+)

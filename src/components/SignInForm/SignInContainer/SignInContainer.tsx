@@ -1,6 +1,6 @@
-import Stack from '@mui/material/Stack';
+import Stack from '@mui/material/Stack'
 
-import { styled } from '@mui/material/styles';
+import { styled } from '@mui/material/styles'
 
 const SignInContainer = styled(Stack)(({ theme }) => ({
   minHeight: '100%',
@@ -22,6 +22,6 @@ const SignInContainer = styled(Stack)(({ theme }) => ({
         'radial-gradient(at 50% 50%, hsla(210, 100%, 16%, 0.5), hsl(220, 30%, 5%))',
     }),
   },
-}));
+}))
 
-export default SignInContainer;
+export default SignInContainer

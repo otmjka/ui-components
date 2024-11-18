@@ -1,6 +1,6 @@
 // src/components/Button/Button.stories.tsx
-import type { Meta, StoryObj } from '@storybook/react';
-import SignInCard from './SignInCard';
+import type { Meta, StoryObj } from '@storybook/react'
+import SignInCard from './SignInCard'
 
 const meta: Meta<typeof SignInCard> = {
   title: 'Components/SignInCard',
@@ -20,14 +20,14 @@ const meta: Meta<typeof SignInCard> = {
       options: ['primary', 'secondary', 'error', 'info', 'success', 'warning'],
     },
   },
-} satisfies Meta<typeof SignInCard>;
+} satisfies Meta<typeof SignInCard>
 
-export default meta;
-type Story = StoryObj<typeof meta>;
+export default meta
+type Story = StoryObj<typeof meta>
 
 export const Password: Story = {
   args: {},
-};
+}
 
 // // Define your stories
 // export const Primary: Story = {

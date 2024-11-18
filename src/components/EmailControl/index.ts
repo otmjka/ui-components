@@ -1,2 +1,2 @@
-import EmailControl from './EmailControl';
-export { EmailControl };
+import EmailControl from './EmailControl'
+export { EmailControl }

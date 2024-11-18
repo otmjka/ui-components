@@ -1,13 +1,10 @@
-// esbuild.config.js
-import esbuild from 'esbuild';
-// const esbuild = require('esbuild');
-// const glob = require('glob');
-import * as glob from 'glob';
+import esbuild from 'esbuild'
+import * as glob from 'glob'
 
 // Using glob.sync instead of globSync
 const entryPoints = glob.sync('./src/**/*.{ts,tsx}', {
   ignore: ['**/*.stories.tsx', '**/*.test.tsx'],
-});
+})
 
 async function build() {
   try {
@@ -23,7 +20,7 @@ async function build() {
       external: ['react', 'react-dom', '@mui/material'],
       platform: 'neutral',
       packages: 'external',
-    });
+    })
 
     // CJS Build (for CommonJS support)
     await esbuild.build({
@@ -37,15 +34,15 @@ async function build() {
       external: ['react', 'react-dom', '@mui/material'],
       platform: 'neutral',
       packages: 'external',
-    });
-    console.log('Build completed successfully');
+    })
+    console.log('Build completed successfully')
   } catch (error) {
-    console.error('Build failed:', error);
-    process.exit(1);
+    console.error('Build failed:', error)
+    process.exit(1)
   }
 }
 
 build().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+  console.error(err)
+  process.exit(1)
+})

@@ -1,7 +1,20 @@
-1.0.4
+1.0.9
 
-- supporting types
-- npm run storybook
+- [+] update ver in package.json
+- layout component
+- app theme + cssbase
+
+  1.0.8
+
+- [+] change package.json
+- [+] react-hook example
+- [+] add tests for SignInForm
+  type email
+  type password
+  click submit
+  catch handler
+- [+] import SignInForm
+- [+] add data-testid to form controls
 
   1.0.5
 
@@ -46,16 +59,7 @@ mb transform to
 │   │   │   ├── H1
 │   │   │   ├── TextField
 
-1.0.8
+1.0.4
 
-- [+] change package.json
-- [+] react-hook example
-- [+] add tests for SignInForm
-  type email
-  type password
-  click submit
-  catch handler
-- [+] import SignInForm
-
-- [+] add online demo otmjka.github.io/ui-components
-- [+] add data-testid to form controls
+- supporting types
+- npm run storybook

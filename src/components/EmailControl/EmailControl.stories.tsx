@@ -1,6 +1,6 @@
 // src/components/Button/Button.stories.tsx
-import type { Meta, StoryObj } from '@storybook/react';
-import EmailControl from './EmailControl';
+import type { Meta, StoryObj } from '@storybook/react'
+import EmailControl from './EmailControl'
 
 const meta: Meta<typeof EmailControl> = {
   title: 'Components/EmailControl',
@@ -29,10 +29,10 @@ const meta: Meta<typeof EmailControl> = {
       options: ['primary', 'secondary', 'error', 'info', 'success', 'warning'],
     },
   },
-} satisfies Meta<typeof EmailControl>;
+} satisfies Meta<typeof EmailControl>
 
-export default meta;
-type Story = StoryObj<typeof meta>;
+export default meta
+type Story = StoryObj<typeof meta>
 
 export const Submit: Story = {
   args: {
@@ -48,4 +48,4 @@ export const Submit: Story = {
     color: 'primary',
     sx: { ariaLabel: 'email' },
   },
-};
+}

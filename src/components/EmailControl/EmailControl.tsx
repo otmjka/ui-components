@@ -1,8 +1,8 @@
-import { FC } from 'react';
-import { TextField } from '../TextField';
-import { TextFieldProps } from '@mui/material/TextField';
-import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
+import { FC } from 'react'
+import { TextField } from '../TextField'
+import { TextFieldProps } from '@mui/material/TextField'
+import FormControl from '@mui/material/FormControl'
+import FormLabel from '@mui/material/FormLabel'
 
 const EmailControl: FC<TextFieldProps> = (props) => (
   <FormControl>
@@ -21,6 +21,6 @@ const EmailControl: FC<TextFieldProps> = (props) => (
       {...props}
     />
   </FormControl>
-);
+)
 
-export default EmailControl;
+export default EmailControl

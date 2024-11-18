@@ -1,19 +1,19 @@
-import { FC } from 'react';
-import { useForm, Controller } from 'react-hook-form';
+import { FC } from 'react'
+import { useForm, Controller } from 'react-hook-form'
 
 import {
   H1,
   EmailControl,
   PasswordControl,
   RememberMeControl,
-} from '../../components';
+} from '../../components'
 
-import { SignInFormBox } from './SignInFormBox';
-import { SignInCard } from './SignInCard';
-import { SignInContainer } from './SignInContainer';
-import { SubmitButton } from './SubmitButton';
-import { SignUpLink } from './SignUpLink';
-import { FormFieldNames, SignInFormProps } from './types';
+import { SignInFormBox } from './SignInFormBox'
+import { SignInCard } from './SignInCard'
+import { SignInContainer } from './SignInContainer'
+import { SubmitButton } from './SubmitButton'
+import { SignUpLink } from './SignUpLink'
+import { FormFieldNames, SignInFormProps } from './types'
 
 const SignInForm: FC<SignInFormProps> = ({ onSubmit }) => {
   const { control, handleSubmit } = useForm({
@@ -22,7 +22,7 @@ const SignInForm: FC<SignInFormProps> = ({ onSubmit }) => {
       password: '',
       rememberMe: false,
     },
-  });
+  })
 
   return (
     <SignInContainer direction="column" justifyContent="space-between">
@@ -73,7 +73,7 @@ const SignInForm: FC<SignInFormProps> = ({ onSubmit }) => {
         </SignInFormBox>
       </SignInCard>
     </SignInContainer>
-  );
-};
+  )
+}
 
-export default SignInForm;
+export default SignInForm

@@ -1,6 +1,6 @@
 // src/components/Button/Button.stories.tsx
-import type { Meta, StoryObj } from '@storybook/react';
-import PasswordControl from './PasswordControl';
+import type { Meta, StoryObj } from '@storybook/react'
+import PasswordControl from './PasswordControl'
 
 const meta: Meta<typeof PasswordControl> = {
   title: 'Components/PasswordControl',
@@ -29,11 +29,11 @@ const meta: Meta<typeof PasswordControl> = {
       options: ['primary', 'secondary', 'error', 'info', 'success', 'warning'],
     },
   },
-} satisfies Meta<typeof PasswordControl>;
+} satisfies Meta<typeof PasswordControl>
 
-export default meta;
-type Story = StoryObj<typeof meta>;
+export default meta
+type Story = StoryObj<typeof meta>
 
 export const Password: Story = {
   args: {},
-};
+}

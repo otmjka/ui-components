@@ -1,6 +1,6 @@
 // src/components/H1/H1.stories.tsx
-import type { Meta, StoryObj } from '@storybook/react';
-import H1 from './H1';
+import type { Meta, StoryObj } from '@storybook/react'
+import H1 from './H1'
 
 const meta: Meta<typeof H1> = {
   title: 'Components/H1',
@@ -25,18 +25,18 @@ const meta: Meta<typeof H1> = {
       options: ['primary', 'secondary', 'error', 'info', 'success', 'warning'],
     },
   },
-} satisfies Meta<typeof H1>;
+} satisfies Meta<typeof H1>
 
-export default meta;
-type Story = StoryObj<typeof meta>;
+export default meta
+type Story = StoryObj<typeof meta>
 
 export const Password: Story = {
   args: {},
-};
+}
 
 // Define your stories
 export const Primary: Story = {
   args: {
     children: '# Heading',
   },
-};
+}

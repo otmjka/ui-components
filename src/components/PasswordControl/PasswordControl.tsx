@@ -1,17 +1,17 @@
-import { TextFieldProps } from '@mui/material';
-import { FC } from 'react';
-import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
-import { TextField } from '../TextField';
-import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
+import { TextFieldProps } from '@mui/material'
+import { FC } from 'react'
+import Box from '@mui/material/Box'
+import Link from '@mui/material/Link'
+import { TextField } from '../TextField'
+import FormControl from '@mui/material/FormControl'
+import FormLabel from '@mui/material/FormLabel'
 
 type PasswordControlProps = {
-  onForgotClick: () => void;
-};
+  onForgotClick: () => void
+}
 
 const PasswordControl: FC<PasswordControlProps & TextFieldProps> = (props) => {
-  const { onForgotClick, id, ...fieldProps } = props;
+  const { onForgotClick, id, ...fieldProps } = props
   return (
     <FormControl>
       <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -37,7 +37,7 @@ const PasswordControl: FC<PasswordControlProps & TextFieldProps> = (props) => {
         {...fieldProps}
       />
     </FormControl>
-  );
-};
+  )
+}
 
-export default PasswordControl;
+export default PasswordControl

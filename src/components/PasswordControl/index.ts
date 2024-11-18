@@ -1,3 +1,3 @@
-import PasswordControl from './PasswordControl';
+import PasswordControl from './PasswordControl'
 
-export { PasswordControl };
+export { PasswordControl }

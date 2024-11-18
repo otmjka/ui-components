@@ -1,6 +1,6 @@
 // src/components/Button/Button.stories.tsx
-import type { Meta, StoryObj } from '@storybook/react';
-import { Button } from './Button';
+import type { Meta, StoryObj } from '@storybook/react'
+import { Button } from './Button'
 
 const meta: Meta<typeof Button> = {
   title: 'Components/Button',
@@ -20,10 +20,10 @@ const meta: Meta<typeof Button> = {
       options: ['primary', 'secondary', 'error', 'info', 'success', 'warning'],
     },
   },
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof Button>
 
-export default meta;
-type Story = StoryObj<typeof meta>;
+export default meta
+type Story = StoryObj<typeof meta>
 
 export const Submit: Story = {
   args: {
@@ -32,7 +32,7 @@ export const Submit: Story = {
     variant: 'contained',
     children: 'submit',
   },
-};
+}
 
 // Define your stories
 export const Primary: Story = {
@@ -41,7 +41,7 @@ export const Primary: Story = {
     children: 'Primary Button',
     color: 'primary',
   },
-};
+}
 
 export const Secondary: Story = {
   args: {
@@ -49,11 +49,11 @@ export const Secondary: Story = {
     children: 'Secondary Button',
     color: 'secondary',
   },
-};
+}
 
 export const Outlined: Story = {
   args: {
     variant: 'outlined',
     children: 'Outlined Button',
   },
-};
+}
